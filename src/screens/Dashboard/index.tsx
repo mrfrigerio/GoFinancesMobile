@@ -1,3 +1,4 @@
+import { HighlightCard } from "../../components/HighlightCard";
 import {
   Container,
   Header,
@@ -7,6 +8,8 @@ import {
   UserWrapper,
   UserInfo,
   UserName,
+  Icon,
+  HighlightCards,
 } from "./styles";
 
 export function Dashboard() {
@@ -25,8 +28,14 @@ export function Dashboard() {
               <UserName>Ragnelli</UserName>
             </User>
           </UserInfo>
+          <Icon name="power" />
         </UserWrapper>
       </Header>
+      <HighlightCards>
+        <HighlightCard />
+        <HighlightCard />
+        <HighlightCard />
+      </HighlightCards>
     </Container>
   );
 }
